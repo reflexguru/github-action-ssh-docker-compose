@@ -21,6 +21,7 @@ unknown docker-images. It is entirely built from Dockerfile on top of
  * `docker_compose_filename` - Path to the docker-compose file in the repository.
  * `use_stack` - Use docker stack instead of docker-compose.
  * `docker_compose_down` - Execute docker-compose-down.
+ * `exec_before_pack` - Execute a custom command before packing the workspace.
 
 # Usage example
 

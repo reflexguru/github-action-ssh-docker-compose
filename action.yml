@@ -29,6 +29,9 @@ inputs:
   docker_compose_down:
     description: Execute docker-compose-down ("true" or "false").
     default: 'false'
+  exec_before_pack:
+    description: Execute a custom command before packing the workspace.
+    required: false
 runs:
   using: docker
   image: Dockerfile
@@ -41,6 +44,7 @@ runs:
     DOCKER_COMPOSE_PREFIX: ${{ inputs.docker_compose_prefix }}
     USE_DOCKER_STACK: ${{ inputs.use_stack }}
     DOCKER_COMPOSE_DOWN: ${{ inputs.docker_compose_down }}
+    EXEC_BEFORE_PACK: ${{ inputs.exec_before_pack }}
     CONTAINER_REGISTRY_USERNAME: ${{ inputs.container_registry_username }}
     CONTAINER_REGISTRY_TOKEN: ${{ inputs.container_registry_token }}
     CONTAINER_REGISTRY: ${{ inputs.container_registry }}
