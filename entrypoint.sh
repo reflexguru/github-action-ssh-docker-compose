@@ -16,7 +16,7 @@ trap cleanup EXIT
 
 if $EXEC_BEFORE_PACK; then
   log "Executing the custom command defined in workflow."
-  $EXEC_BEFORE_PACK
+  eval $EXEC_BEFORE_PACK
 fi
 
 log "Packing workspace into archive to transfer onto remote machine."
