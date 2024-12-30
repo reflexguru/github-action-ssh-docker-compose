@@ -1,5 +1,5 @@
-name: ssh-docker-compose
-description: SSH into host and deploy repository with Docker-Compose
+name: ssh-docker-compose-with-custom-command
+description: SSH into host and deploy repository with Docker-Compose. Fork with support for custom command execution.
 branding:
   icon: cloud
   color: blue 
