@@ -22,6 +22,7 @@ unknown docker-images. It is entirely built from Dockerfile on top of
  * `use_stack` - Use docker stack instead of docker-compose.
  * `docker_compose_down` - Execute docker-compose-down.
  * `exec_before_pack` - Execute a custom command before packing the workspace.
+ * `workspace_dir_name` - Workspace directory name on remote host.
 
 # Usage example
 
